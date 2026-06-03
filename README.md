@@ -27,5 +27,3 @@ This version has been designed to be a web-based solution compatible with Infini
 # Hexagon was originally created by Sushi & Robin! 
 
 https://hexagon.pw
-
-Translated with DeepL.com (free version)
