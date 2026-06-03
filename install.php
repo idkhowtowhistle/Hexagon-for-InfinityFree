@@ -72,22 +72,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 render_header('Install');
 ?>
 <section class="content">
-    <h1>Instalar backend InfinityFree</h1>
+    <h1>Install the backend for InfinityFree</h1>
 
     <div class="panel form-stack">
         <p>
-            Esta pagina cria as tabelas MySQL usadas pela versao PHP do Hexagon.
-            Antes de continuar, edite <strong>includes/config.php</strong> com os dados do banco do InfinityFree.
+            This page creates the MySQL tables used by the PHP version of Hexagon.
+            Before continuing, please edit <strong>includes/config.php</strong> using data from the InfinityFree database.
         </p>
 
         <?php if (db_error()): ?>
             <div class="message error">
-                Nao foi possivel conectar ao banco: <?= e(db_error()) ?>
+                Unable to connect to the database: <?= e(db_error()) ?>
             </div>
         <?php else: ?>
             <div class="message">
-                Conexao MySQL OK.
-                Status das tabelas: <?= tables_ready() ? 'prontas' : 'ainda nao criadas' ?>.
+                MySQL connection OK.
+                Table status: <?= tables_ready() ? 'ready' : 'not yet created' ?>.
             </div>
         <?php endif; ?>
 
@@ -101,8 +101,8 @@ render_header('Install');
 
         <form method="post">
             <?= csrf_field() ?>
-            <button class="button" type="submit">Criar tabelas</button>
-            <a class="button ghost" href="index.php">Voltar</a>
+            <button class="button" type="submit">Create tables</button>
+            <a class="button ghost" href="index.php">Back</a>
         </form>
     </div>
 </section>
