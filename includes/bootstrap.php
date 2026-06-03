@@ -29,7 +29,7 @@ function db(): PDO
     }
 
     if (!has_real_db_config()) {
-        throw new RuntimeException('Edite includes/config.php com os dados MySQL do InfinityFree.');
+        throw new RuntimeException('Edit includes/config.php with the InfinityFree MySQL details.');
     }
 
     $dsn = sprintf(
@@ -233,7 +233,7 @@ function render_header(string $title = ''): void
 
                 <?php if ($setupNeeded): ?>
                     <div class="site-alert">
-                        Banco nao configurado. Abra <a href="install.php">install.php</a> depois de editar includes/config.php.
+                        BANK NOT SET UP. Open <a href="install.php">install.php</a> after editing includes/config.php.
                     </div>
                 <?php endif; ?>
             </header>
