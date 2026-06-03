@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         install_schema();
-        $message = 'Instalacao concluida. Agora voce pode abrir a pagina inicial.';
+        $message = 'Installation complete. You can now open the home page.';
     } catch (Throwable $exception) {
         $error = $exception->getMessage();
     }
