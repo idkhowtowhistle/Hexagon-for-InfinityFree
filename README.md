@@ -15,6 +15,7 @@ It retains the main look and feel of Hexagon and includes a basic backend for:
 2. Edit `includes/config.php` with your InfinityFree MySQL details.
 3. Upload the contents of this folder to `htdocs`.
 4. Open `yourdomain/install.php` and click `Create tables`.
+5. Once you have completed the steps above, delete `install.php` (deleting `database.sql` is optional).
 
 Alternative: instead of `install.php`, you can import `database.sql` in phpMyAdmin.
 
