@@ -6,5 +6,5 @@ return [
     'db_name' => 'example_hexagon',
     'db_user' => 'if0_hexagon',
     'db_pass' => 'HexagonPass',
-    'registration_enabled' => false,
+    'registration_enabled' => true,
 ];
