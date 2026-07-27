@@ -1,4 +1,4 @@
-# Hexagon for InfinityFree
+# Hexagon PHP & MySQL
 
 This package is a PHP + MySQL version designed for InfinityFree shared hosting.
 It retains the main look and feel of Hexagon and includes a basic backend for:
@@ -25,6 +25,6 @@ Standard InfinityFree does not run Node.js, Postgres, rendering processes, RCC/g
 
 This version has been designed to be a web-based solution compatible with InfinityFree.
 
-# Hexagon was originally created by Sushi & Robin! 
+# Hexagon was originally created by Sushi.
 
 https://hexagon.pw
